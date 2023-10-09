@@ -1,18 +1,28 @@
-
-header{
+.header {
     display: flex;
-    background-color: black;
-    color: white;
     align-items: center;
-    justify-content: space-between;
+    background-color: rgb(19, 0, 42);
+
 }
-div{
-    margin: 1%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: smaller;
+
+.header a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
 }
-.logo-icon{
-   
-    width: 100px;
-    height: 100px;
+
+.header .logo {
+    max-height: 32px;
+}
+
+.header .text-bonito {
+    padding-left: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    color: white;
+    display: flex;
+}
+
+.header .text-bonito i {
+    padding-right: 5px;
 }

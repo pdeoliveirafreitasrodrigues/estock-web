@@ -1,0 +1,27 @@
+.sidenav{
+    //background-color: darkslateblue;
+    background-color: rgb(19, 0, 42);
+    width: 200px;
+
+}
+.sidenav a {
+    color: white;
+}
+
+.sidenav a:hover {
+    color: black;
+}
+
+.sidenav i {
+    padding-right: 10px;
+}
+
+/* Define a cor de fundo quando o mouse passa sobre o elemento */
+.nav-list:hover {
+    background-color: #f0f0f0;
+}
+
+/* Define a cor do texto quando o mouse passa sobre o elemento */
+.nav-list:hover i.material-icons {
+    color: black; 
+}
