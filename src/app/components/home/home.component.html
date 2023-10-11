@@ -1,8 +1,9 @@
-<mat-card class="home mat-elevation-z3">
+<mat-card class="home mat-elevation-z3" *ngFor="let produto of produtos">
     <mat-card-title class="title">
-        Seus Produtos
+        {{produto.description}}
     </mat-card-title>
     <mat-card-subtitle class="subtitle">
-        Resumo dos produtos cadastrados.
+        Código: {{produto.code}}
     </mat-card-subtitle>
+    <mat-card-content>R$ {{produto.costPrice}}</mat-card-content>
 </mat-card>

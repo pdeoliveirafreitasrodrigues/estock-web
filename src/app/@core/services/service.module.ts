@@ -1,8 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HomeRoutingModule } from './home-routing.module';
-import { ServiceModule } from 'src/app/@core/services/service.module';
 import { HttpClientModule } from '@angular/common/http';
+import { ProdutoService } from './produto.service';
 
 
 
@@ -10,9 +9,8 @@ import { HttpClientModule } from '@angular/common/http';
   declarations: [],
   imports: [
     CommonModule,
-    HomeRoutingModule,
-    ServiceModule,
     HttpClientModule
-  ]
+  ],
+  providers: [ProdutoService]
 })
-export class HomeModule { }
+export class ServiceModule { }

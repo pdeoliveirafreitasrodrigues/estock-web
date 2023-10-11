@@ -1,7 +1,7 @@
 .sidenav{
     //background-color: darkslateblue;
     background-color: rgb(19, 0, 42);
-    width: 200px;
+    width: 15%;
 
 }
 .sidenav a {
@@ -29,4 +29,12 @@
 .content{
     padding: 16px;
     background-color: white;
+    position: fixed;
+    width: 85%;
+    height: 91%;
+   // display: grid;
+    //grid-template-columns: repeat(3, 1fr);
+    gap: 3%;
+    display: flex;
+    flex-wrap: wrap;
 }
