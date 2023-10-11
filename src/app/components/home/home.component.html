@@ -1,9 +1,14 @@
-<mat-card class="home mat-elevation-z3" *ngFor="let produto of produtos">
-    <mat-card-title class="title">
-        {{produto.description}}
-    </mat-card-title>
-    <mat-card-subtitle class="subtitle">
-        Código: {{produto.code}}
-    </mat-card-subtitle>
-    <mat-card-content>R$ {{produto.costPrice}}</mat-card-content>
-</mat-card>
+<div class="content">
+    <div class="grid">
+        <mat-card class="home mat-elevation-z3" *ngFor="let produto of produtos">
+            <mat-card-title class="title">
+                {{produto.description}}
+            </mat-card-title>
+            <mat-card-subtitle class="subtitle">
+                Código: {{produto.code}}
+            </mat-card-subtitle>
+            <mat-card-content>R$ {{produto.costPrice}}</mat-card-content>
+        </mat-card>
+    </div>
+</div>
+

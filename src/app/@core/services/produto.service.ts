@@ -11,6 +11,7 @@ import { ProductModel } from '../Product.model';
 // Faz referência à controller 
 export class ProdutoService {
   private urlBase = UrlBack.BASE_TEST + '/api/products';
+  //private urlBase = UrlBack.BASE_RAILWAY + '/api/products';
 
   constructor(private http: HttpClient) { }
 

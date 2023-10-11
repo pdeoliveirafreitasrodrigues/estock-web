@@ -1,9 +1,43 @@
+.home {
+    /* Estilos do seu cartão aqui */
+    width: 85%; /* Certifica-se de que o cartão se expande para preencher a coluna */
+    margin-bottom: 20px; /* Espaço entre os cartões */
+    box-sizing: border-box;
+}
+
 .home .title {
-    font-size: 3rem;
-    font-weight: 300;
+    font-size: 2rem;
+    font-weight: 500;
     line-height: 1.2;
+    overflow: hidden; /* Impede que o texto do título saia do cartão */
+    text-overflow: ellipsis; /* Adiciona reticências (...) quando o texto do título estiver cortado */
 }
 
 .home .subtitle {
     font-size: 1.1rem;
 }
+
+/*.column {
+    flex: 1; As colunas terão tamanhos iguais 
+    margin-right: 3%; /* Espaço de 3% entre as colunas 
+    box-sizing: border-box; /* Para incluir a margem no tamanho das colunas 
+}
+
+ Exemplo de uso: Dividir em 3 colunas 
+.column:nth-child(3n) {
+    margin-right: 0; /* Remove a margem direita da terceira coluna em cada linha 
+}*/
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Espaço entre as colunas */
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* Três colunas com largura igual */
+    gap: 20px; /* Espaço entre os cartões */
+}
+
+

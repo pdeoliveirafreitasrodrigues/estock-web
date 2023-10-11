@@ -26,15 +26,14 @@
     color: black; 
 }
 
-.content{
+.content {
     padding: 16px;
     background-color: white;
     position: fixed;
     width: 85%;
     height: 91%;
-   // display: grid;
-    //grid-template-columns: repeat(3, 1fr);
-    gap: 3%;
     display: flex;
     flex-wrap: wrap;
 }
+
+
