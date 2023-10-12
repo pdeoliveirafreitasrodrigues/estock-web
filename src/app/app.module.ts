@@ -15,13 +15,15 @@ import { MatListModule } from '@angular/material/list';
 import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './components/home/home.component';
 import { MatCardModule } from '@angular/material/card';
+import { CadastrarProdutoComponent } from './components/cadastrar-produto/cadastrar-produto.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
     HeaderComponent,
-    HomeComponent
+    HomeComponent,
+    CadastrarProdutoComponent
   ],
   imports: [
     BrowserModule,

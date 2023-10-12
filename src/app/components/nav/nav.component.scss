@@ -1,8 +1,11 @@
+.container {
+    padding-top: 9vh;
+}
 .sidenav{
     //background-color: darkslateblue;
     background-color: rgb(19, 0, 42);
-    width: 15%;
-
+    width: 15vw;
+    top: 9vh !important; 
 }
 .sidenav a {
     color: white;
@@ -27,13 +30,14 @@
 }
 
 .content {
-    padding: 16px;
+    padding: 20px;
     background-color: white;
     position: fixed;
-    width: 85%;
+    width: 85vw;
     height: 91%;
     display: flex;
     flex-wrap: wrap;
 }
+
 
 

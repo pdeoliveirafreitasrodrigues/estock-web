@@ -1,5 +1,5 @@
 <mat-sidenav-container clas="container">
-    <mat-sidenav class="sidenav" mode="side" opened fixedInViewport="true" fixedTopGap="64">
+    <mat-sidenav class="sidenav" mode="side" opened fixedInViewport="true">
          <mat-nav-list>
              <a mat-list-item class="nav-list" href="/home">
                 <i class="material-icons">
@@ -13,10 +13,15 @@
                 </i>
                 Gerir Produtos
              </a>
+             <a mat-list-item class="nav-list" href="/cadastrar-produto">
+                <i class="material-icons">
+                    add
+                </i>
+                Cadastrar Produto
+             </a>
          </mat-nav-list>
     </mat-sidenav>
     <mat-sidenav-content class="content">
-        <!--<app-home></app-home>-->
         <router-outlet></router-outlet>
     </mat-sidenav-content>
     
