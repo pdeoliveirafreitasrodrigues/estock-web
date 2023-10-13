@@ -1,14 +1,6 @@
-<!--<form [formGroup]="formularioProduto">
-    <ngb-alert *ngIf="mostrar == false" [dismissible]="true"><strong>Uhuu!</strong> Produto cadastrado!</ngb-alert>
+<form [formGroup]="formularioProduto">
+    <!--<ngb-alert *ngIf="mostrar == false" [dismissible]="true"><strong>Uhuu!</strong> Produto cadastrado!</ngb-alert>-->
   <table class="example-full-width" cellspacing="0">
-    <tr>
-      <td>
-        <mat-form-field class="example-full-width">
-          <mat-label>Nome</mat-label>
-          <input matInput type="text" formControlName="name" />
-        </mat-form-field>
-      </td>
-    </tr>
     <tr>
       <td>
         <mat-form-field class="example-full-width">
@@ -25,23 +17,6 @@
         </mat-form-field>
       </td>
     </tr>
-    <tr></tr>
-    <tr>
-      <td>
-        <mat-form-field class="example-full-width">
-          <mat-label>Preço de venda</mat-label>
-          <input matNativeControl type="number" formControlName="salePrice" />
-        </mat-form-field>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <mat-form-field class="example-full-width">
-          <mat-label>Tempo de preparo</mat-label>
-          <input matInput type="text" formControlName="preparationTime" />
-        </mat-form-field>
-      </td>
-    </tr>
     <tr>
       <td>
         <mat-form-field class="example-full-width">
@@ -50,14 +25,6 @@
         </mat-form-field>
       </td>
     </tr>
-    <mat-form-field>
-    <mat-label>Tipo de produto</mat-label>
-    <mat-select formControlName="productType" name="itens">
-      <mat-option *ngFor="let itens of prodcuts" [value]="itens">
-        {{itens}}
-      </mat-option>
-    </mat-select>
-  </mat-form-field>
   </table>
   <div class="example-button-row">
     <button
@@ -65,7 +32,7 @@
       (click)="salvarProduto()"
       mat-stroked-button color="primary"
     >
-      Salvame Plsssss
+      cadastrar
     </button>
   </div>
-</form>-->
+</form>
