@@ -1,0 +1,19 @@
+<div class="content">
+  <div class="row cards">
+    <mat-card
+      class="home mat-elevation-z3 col-sm-12 col-md-6 col-lg-2"
+      *ngFor="let produto of produtos"
+    >
+      <mat-card-title class="title">
+        {{ produto.description }}
+      </mat-card-title>
+      <mat-card-subtitle class="subtitle">
+        Código: {{ produto.code }}
+      </mat-card-subtitle>
+      <mat-card-content>R$ {{ produto.costPrice }}</mat-card-content>
+      <button mat-button color="primary" (click)="onEdit(produto.id)">
+        Atualizar
+      </button>
+    </mat-card>
+  </div>
+</div>

@@ -15,7 +15,14 @@ import { MatListModule } from '@angular/material/list';
 import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './components/home/home.component';
 import { MatCardModule } from '@angular/material/card';
+import {MatButtonModule} from '@angular/material/button';
+import {MatInputModule} from '@angular/material/input';
+import {MatSelectModule} from '@angular/material/select';
+import { CommonModule } from '@angular/common';
+import { MaterialImportsModule } from './material-imports/material-imports.module';
 import { CadastrarProdutoComponent } from './components/cadastrar-produto/cadastrar-produto.component';
+import { ListarProdutosComponent } from './components/listar-produtos/listar-produtos.component';
+import { AtualizarProdutoComponent } from './components/atualizar-produto/atualizar-produto.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +30,9 @@ import { CadastrarProdutoComponent } from './components/cadastrar-produto/cadast
     NavComponent,
     HeaderComponent,
     HomeComponent,
-    CadastrarProdutoComponent
+    ListarProdutosComponent,
+    AtualizarProdutoComponent
+    
   ],
   imports: [
     BrowserModule,
@@ -34,7 +43,12 @@ import { CadastrarProdutoComponent } from './components/cadastrar-produto/cadast
     MatSidenavModule,
     MatListModule,
     MatToolbarModule,
-    MatCardModule
+    MatCardModule,
+    CommonModule,
+    MatButtonModule,
+    MatInputModule,
+    MatSelectModule,
+    MaterialImportsModule
   ],
   providers: [
  
