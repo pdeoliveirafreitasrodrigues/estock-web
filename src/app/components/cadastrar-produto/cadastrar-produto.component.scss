@@ -1,0 +1,34 @@
+/* Estilização para o formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    //max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+  }
+  
+  /* Estilização para os campos de entrada */
+  mat-form-field {
+    margin-bottom: 10px;
+    width: 100%;
+  
+    input {
+      width: 100%;
+    }
+  }
+  
+  /* Estilização para o botão Cadastrar */
+  .example-button-row {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+
+  .ng-star-inserted{
+    width: 100%;
+  }

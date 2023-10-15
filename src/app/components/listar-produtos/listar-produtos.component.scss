@@ -1,0 +1,16 @@
+.home {
+    /* Estilos do seu cartão aqui */
+    margin-bottom: 5px; /* Espaço entre os cartões */
+    box-sizing: border-box;
+}
+
+.home .title {
+    font-size: 1.5rem;
+    line-height: 1rem;
+    
+    text-overflow: ellipsis; /* Adiciona reticências (...) quando o texto do título estiver cortado */
+}
+
+.home .subtitle {
+    font-size: 1rem;
+}

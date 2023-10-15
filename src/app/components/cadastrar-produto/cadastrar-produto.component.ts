@@ -20,7 +20,10 @@ export class CadastrarProdutoComponent implements OnInit {
 
   public salvarProduto(){
     const jsonPronto = this.formularioProduto.value;
-    this.produtoService.create(jsonPronto).subscribe(e => console.log(e))
+    this.produtoService.create(jsonPronto).subscribe(e => {
+      console.log(e);
+      this.formularioProduto.reset();
+    });
   }
 
 
