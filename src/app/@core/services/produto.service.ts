@@ -25,4 +25,16 @@ export class ProdutoService {
     return this.http.post<number>(this.urlBase, body)
   } 
 
+  public deleteById(id: number): Observable<ProductModel> {
+    return this.http.delete<ProductModel>(this.urlBase + '/' + id);
+  }  
+
+  public findById(id: number): Observable<ProductModel> {
+    return this.http.get<ProductModel>(this.urlBase + '/' + id);
+  }
+
+  public update(product: ProductModel): Observable<ProductModel>{
+    return this.http.put<ProductModel>(this.urlBase + '/' + product.id, product);
+  }
+
 }

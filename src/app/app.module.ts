@@ -20,9 +20,8 @@ import {MatInputModule} from '@angular/material/input';
 import {MatSelectModule} from '@angular/material/select';
 import { CommonModule } from '@angular/common';
 import { MaterialImportsModule } from './material-imports/material-imports.module';
-import { CadastrarProdutoComponent } from './components/cadastrar-produto/cadastrar-produto.component';
 import { ListarProdutosComponent } from './components/listar-produtos/listar-produtos.component';
-import { AtualizarProdutoComponent } from './components/atualizar-produto/atualizar-produto.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -31,7 +30,6 @@ import { AtualizarProdutoComponent } from './components/atualizar-produto/atuali
     HeaderComponent,
     HomeComponent,
     ListarProdutosComponent,
-    AtualizarProdutoComponent
     
   ],
   imports: [
@@ -48,7 +46,9 @@ import { AtualizarProdutoComponent } from './components/atualizar-produto/atuali
     MatButtonModule,
     MatInputModule,
     MatSelectModule,
-    MaterialImportsModule
+    MaterialImportsModule,
+
+    HttpClientModule
   ],
   providers: [
  

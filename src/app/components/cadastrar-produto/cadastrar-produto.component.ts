@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
+import { ActivatedRoute, Router } from '@angular/router';
 import { ProductModel } from 'src/app/@core/Product.model';
 import { ProdutoService } from 'src/app/@core/services/produto.service';
 
@@ -9,9 +10,15 @@ import { ProdutoService } from 'src/app/@core/services/produto.service';
   styleUrls: ['./cadastrar-produto.component.scss']
 })
 export class CadastrarProdutoComponent implements OnInit {
+
   public listaDeProdutos: ProductModel[] = [];
   public formularioProduto!: FormGroup;
-  constructor(private formBuilder: FormBuilder, private produtoService: ProdutoService) { }
+
+  constructor(
+    private formBuilder: FormBuilder,
+    private produtoService: ProdutoService, 
+    private router: Router,
+    private activatedRoute: ActivatedRoute) { }
 
   ngOnInit(): void {
     // Chamar a função para executar
@@ -23,6 +30,7 @@ export class CadastrarProdutoComponent implements OnInit {
     this.produtoService.create(jsonPronto).subscribe(e => {
       console.log(e);
       this.formularioProduto.reset();
+      this.router.navigateByUrl("/listar-produtos")
     });
   }
 

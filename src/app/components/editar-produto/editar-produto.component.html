@@ -1,0 +1,16 @@
+<form [formGroup]="formularioProduto" (ngSubmit)="atualizarProduto()">
+    <div>
+      <label for="code">Código:</label>
+      <input type="text" id="code" formControlName="code">
+    </div>
+    <div>
+      <label for="description">Descrição:</label>
+      <input type="text" id="description" formControlName="description">
+    </div>
+    <div>
+      <label for="costPrice">Preço de Custo:</label>
+      <input type="number" id="costPrice" formControlName="costPrice">
+    </div>
+    <button type="submit">Atualizar Produto</button>
+  </form>
+  
