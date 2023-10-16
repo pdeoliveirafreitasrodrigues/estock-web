@@ -1,5 +1,5 @@
 
-![E-Stock](../estock-web/src/assets/Icons/en-rbg.png)
+![E-Stock](assets/Icons/en-rbg.png)
 
 **A project developed by: Paulo Rodrigues and Kaue Ochner.**
 
