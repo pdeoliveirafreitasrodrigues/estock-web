@@ -1,4 +1,4 @@
-<form [formGroup]="formularioProduto" (ngSubmit)="atualizarProduto()">
+<!--<form [formGroup]="formularioProduto" (ngSubmit)="atualizarProduto()">
     <div>
       <label for="code">Código:</label>
       <input type="text" id="code" formControlName="code">
@@ -12,5 +12,51 @@
       <input type="number" id="costPrice" formControlName="costPrice">
     </div>
     <button type="submit">Atualizar Produto</button>
+  </form>-->
+  
+  <h1>ATUALIZAÇÃO DE PRODUTO</h1>
+  <form [formGroup]="formularioProduto" (ngSubmit)="atualizarProduto()">
+      <!--<ngb-alert *ngIf="mostrar == false" [dismissible]="true"><strong>Uhuu!</strong> Produto cadastrado!</ngb-alert>-->
+    <table class="example-full-width" cellspacing="0">
+      <tr>
+        <td>
+          <mat-form-field class="example-full-width">
+            <mat-label>Codigo</mat-label>
+            <input matInput type="text" formControlName="code" />
+          </mat-form-field>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <mat-form-field class="example-full-width">
+            <mat-label>Preço de custo</mat-label>
+            <input matInput type="number" formControlName="costPrice" />
+          </mat-form-field>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <mat-form-field class="example-full-width">
+            <mat-label>Descrição</mat-label>
+            <input matInput type="text" formControlName="description" />
+          </mat-form-field>
+        </td>
+      </tr>
+    </table>
+    <div class="example-button-row">
+      <button
+        type="submit"
+        mat-stroked-button color="primary"
+      >
+      Atualizar
+      </button>
+      <button
+      type="cancel" class="cancelar"
+      mat-stroked-button color="primary"
+      (click)="cancelarOperacao()"
+    >
+    Cancelar
+    </button>
+    </div>
   </form>
   

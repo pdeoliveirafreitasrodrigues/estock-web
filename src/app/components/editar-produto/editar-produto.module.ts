@@ -7,6 +7,11 @@ import { EditarProdutoComponent } from './editar-produto.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ServiceModule } from 'src/app/@core/services/service.module';
 
+import { MatOptionModule } from '@angular/material/core';
+import { MatSelectModule } from '@angular/material/select';
+import { MatButtonModule } from '@angular/material/button';
+import { MatInputModule } from '@angular/material/input';
+
 
 @NgModule({
   declarations: [
@@ -16,7 +21,11 @@ import { ServiceModule } from 'src/app/@core/services/service.module';
     CommonModule,
     EditarProdutoRoutingModule,
     ReactiveFormsModule,
-    ServiceModule
+    ServiceModule,
+    MatOptionModule,
+    MatSelectModule,
+    MatButtonModule,
+    MatInputModule
   ]
 })
 export class EditarProdutoModule { }

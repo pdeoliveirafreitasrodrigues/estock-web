@@ -51,29 +51,10 @@ export class EditarProdutoComponent implements OnInit {
     });
   }
 
-  /*atualizarProduto() {
-    if (this.formularioProduto.valid) {
-      if (this.produto) {
-        const produtoAtualizado: ProductModel = {
-          id: this.produto.id,
-          code: this.formularioProduto.value.code,
-          description: this.formularioProduto.value.description,
-          costPrice: this.formularioProduto.value.costPrice,
-        };
+  cancelarOperacao(){
+    this.router.navigateByUrl('/listar-produtos');
+  }
 
-        this.produtoService.update(produtoAtualizado).subscribe(
-          (produto) => {
-            this.router.navigateByUrl('/listar-produtos');
-          },
-          (error) => {
-            console.error('Erro ao atualizar o produto:', error);
-          }
-        );
-      } else {
-        console.error('Produto não encontrado ou indefinido');
-      }
-    }
-  }*/
   atualizarProduto() {
     if (this.formularioProduto.valid) {
       if (this.produto) {
